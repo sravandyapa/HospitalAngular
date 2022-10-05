@@ -1,0 +1,95 @@
+marquee{
+  background-color: rgb(44,66,146);
+  color: white;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif !important;
+
+  a{
+    color:white;
+  }
+}
+.home-header-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-header-component{
+  flex-basis: 50%;
+}
+
+.home-navbar-component{
+  flex-basis: 50%;
+  margin-top:auto;
+}
+
+.side-heading {
+  padding:40px 40px 0px 40px;
+  text-align: center;
+  font-weight: 700;
+  margin:0px;
+  font-family: 'Open Sans', sans-serif !important;
+
+  &-img{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    &:after,&:before{
+      content:"";
+      width:145px;
+      height:3px;
+      padding:6px !important;
+      margin:0px 10px;
+      border-bottom:5px solid rgb(13,59,140);
+    }
+    &-doctor:after,&-doctor:before{
+      width:115px;
+    }
+  }
+}
+
+.slide-container {
+  background-color: white !important;
+}
+
+.slide{
+  img{
+    object-fit: scale-down;
+    width:200px;
+    height:200px;
+  }
+  h4{
+    font-size:15px;
+    width:200px;
+    text-align: center;
+    overflow-wrap: break-word ;
+    font-family: 'Open Sans', sans-serif !important;
+  }
+}
+
+::ng-deep .slick-list{
+  margin:0px 20px !important;
+}
+
+.slick-slider {
+  width: 80%;
+  margin: auto;
+  background: rgb(14, 13, 13);
+}
+
+::ng-deep .slick-prev, ::ng-deep .slick-next {
+  height: 45px;
+  width: 40px;
+  top:42%;
+  background: white !important;
+
+  &:before{
+    color:rgb(144,184,66) !important;
+    font-size: 30px;
+  }
+}
+
+app-footer{
+  margin-top: 80px;
+  display: block;
+}

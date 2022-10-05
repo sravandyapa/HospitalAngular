@@ -1,0 +1,61 @@
+<marquee>
+  Click here to get the COVID-19 Update
+  <a href="https://balcomedicalcentre.com/covid">  Read More </a>
+</marquee>
+<div class="home-header-nav-container">
+  <app-header class="home-header-component"></app-header>
+  <app-navbar class="home-navbar-component"></app-navbar>
+</div>
+<app-corosol></app-corosol>
+
+<!-- OUR SPECIALITIES -->
+<h1 class="side-heading">OUR SPECIALITIES</h1>
+<span class="side-heading-img">
+  <img src={{underscoreImg}}>
+</span>
+<ngx-slick-carousel class="slide-container"
+  #slickModal="slick-carousel"
+  [config]="slideConfig">
+  <div ngxSlickItem *ngFor="let slide of specialitesTitles" class="slide">
+    <div>
+      <img src="{{ specialitiesImglocation+slide+'.jpg' }}" alt="" width="100%">
+      <h4>{{slide}}</h4>
+    </div>
+  </div>
+</ngx-slick-carousel>
+
+
+<!-- OUR DOCTORS -->
+<h1 class="side-heading">OUR DOCTORS</h1>
+<span class="side-heading-img side-heading-img-doctor">
+  <img src={{underscoreImg}}>
+</span>
+<ngx-slick-carousel class="slide-container"
+  #slickModal="slick-carousel"
+  [config]="slideConfig">
+  <div ngxSlickItem *ngFor="let slide of specialitesTitles" class="slide">
+    <div>
+      <img src="{{ specialitiesImglocation+slide+'.jpg' }}" alt="" width="100%">
+      <h4>{{slide}}</h4>
+    </div>
+  </div>
+</ngx-slick-carousel>
+
+<!-- OUR PARTNERS -->
+<h1 class="side-heading">OUR PARTNERS</h1>
+<span class="side-heading-img side-heading-img-doctor">
+  <img src={{underscoreImg}}>
+</span>
+<ngx-slick-carousel class="slide-container"
+  #slickModal="slick-carousel"
+  [config]="slideConfig">
+  <div ngxSlickItem *ngFor="let slide of specialitesTitles" class="slide">
+    <div>
+      <img src="{{ specialitiesImglocation+slide+'.jpg' }}" alt="" width="100%">
+      <h4>{{slide}}</h4>
+    </div>
+  </div>
+</ngx-slick-carousel>
+
+
+<app-footer></app-footer>
